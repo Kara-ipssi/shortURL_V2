@@ -15,23 +15,17 @@
         <!-- Styles -->
         {{-- import app.css file --}}
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="{{ asset('scripts/tailwindcss.js')}}"></script>
 
         <!-- Scripts -->
         @yield('scripts')
         
     </head>
     <body class="bg-gray-100">
-        <header>
+        <div class="min-h-[100vh] relative">
             @yield('header')
-        </header>
-
-        <div id="main">
             @yield('content')
-        </div>
-
-        <footer>
             @yield('footer')
-        </footer>
+        </div>
     </body>
 </html>

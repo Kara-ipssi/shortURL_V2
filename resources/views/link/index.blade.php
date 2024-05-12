@@ -3,10 +3,9 @@
 @section('title', 'Home : ShortURL') 
 
 @section('header')
-    {{-- @include('partials.menu') --}}
     <div class="text-center">
         <div class="min-h-[120px] flex justify-center items-center">
-            <a href="{{route('home.index')}}" class="text-[49px] font-black text-blue-500 tracking-[-1px] drop-shadow-lg break-words">
+            <a href="{{route('link.index')}}" class="text-[49px] font-black text-blue-500 tracking-[-1px] drop-shadow-lg break-words">
                 Shortme.biz
             </a>
         </div>
@@ -15,23 +14,30 @@
 
 @section('content')
     <div class="container mx-auto">
-        <div class="max-w-[900px] mx-auto">
+        <div class="max-w-[900px] mx-auto pb-20">
             <div class="flex flex-col justify-center items-center">
-                <section id="urlbox" class="w-full ">
+                <section id="urlbox" class="w-full">
                     <div class="bg-white shadow-lg rounded px-8 mb-4 flex flex-col h-[270px] items-center justify-center ">
                         <h1 class=" px-auto pb-[15px] font-bold text-[30px] text-[#555] tracking-[-1px]">
                             Paste the URL to be shortened
                         </h1>
-                        <form action="" method="post">
+                        <form action="{{route('link.new')}}" method="post">
                             @csrf
+                            @method('POST')
                             <div class="flex w-[620px]">
-                                <input class="shadow appearance-none border rounded-l w-full h-[58px] py-2 px-3 text-gray-700 leading-tight" id="url" name="url" type="text" placeholder="Enter the url text here..." required>
+                                <input class="shadow appearance-none border rounded-l w-full h-[58px] py-2 px-3 text-gray-700 leading-tight" value="{{old('url')}}" id="url" name="url" type="text" placeholder="Enter the url text here..." required>
+                                
                                 <div class="flex items">
                                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r h-[58px] w-[150px]" type="submit">
                                         Shorten URL
                                     </button>
                                 </div>
                             </div>
+                            @if ($errors->has('url'))
+                                @foreach ($errors->get('url') as $error)
+                                    <div class="text-red-500 text-sm pl-1">{{ $error }}</div>
+                                @endforeach            
+                            @endif
                         </form>
                         <p class="max-w-[620px] mt-[10px] mx-auto text-center">
                             ShortURL, a free tool for optimizing links. Easily create concise URLs with our <br/>
@@ -119,5 +125,11 @@
                 </section>
             </div>
         </div>
+    </div>
+@endsection
+
+@section('footer')
+    <div class="absolute bottom-0 w-full">
+        @include('partials.footer')
     </div>
 @endsection
