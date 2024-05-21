@@ -88,32 +88,32 @@
                 </section>
                 <section id="picto" class="grid grid-rows-2 grid-cols-3 max-sm:grid-cols-2 gap-[30px] max-w-full mt-[50px] mx-auto">
                     <div class="flex flex-col text-center">
-                        <img src='/icons/good.png' alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="{{ asset('icons/good.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Easy</h3>
                         <p class="text-[17px] mt-[10px]">Effortlessly shorten your links with ShortURL by entering your long URL to swiftly receive a concise and optimized link.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src='/icons/link.png' alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="{{ asset('icons/link.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Shortened</h3>
                         <p class="text-[17px] mt-[10px]">ShortURL effortlessly shortens any link, regardless of its size.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src='/icons/lock.png' alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="{{ asset('icons/lock.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Secure</h3>
                         <p class="text-[17px] mt-[10px]">Swift and secure, our service employs the HTTPS protocol and data encryption for enhanced protection.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src='/icons/chart.png' alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="{{ asset('icons/chart.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Statistics</h3>
                         <p class="text-[17px] mt-[10px]">Monitor the click count for your shortened URL.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src='/icons/remove.png' alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="{{ asset('icons/remove.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Reliable</h3>
                         <p class="text-[17px] mt-[10px]">Any links attempting to spread spam, viruses, or malware will be promptly deleted.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src='/icons/device.png' alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="{{ asset('icons/device.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Devices</h3>
                         <p class="text-[17px] mt-[10px]">Compatible across smartphones, tablets, and desktop devices.</p>
                     </div>
