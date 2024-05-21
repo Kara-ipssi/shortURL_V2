@@ -36,6 +36,7 @@ class LinkController extends Controller
         );
 
         $url = $request->url;
+        $path = $request->url();
 
 
         $keyword = $this->generateRandomString(3);
@@ -45,12 +46,13 @@ class LinkController extends Controller
         $link->ip = $ip;
         $link->url = $url;
 
-        $app_domain = env('APP_DOMAIN_PROD', 'http://localhost:8000');
+        $app_domain = (explode('/', $path))[2];
 
         $short_url = "$app_domain/$keyword";
         $link->save();
-
-        return view('link.preview', compact('link', 'short_url'));
+        $success = $link->id ? true : false;
+        $return_tab = ['link' => $link, 'short_url' => $short_url, 'success' => $success];
+        return redirect()->route('link.preview')->with($return_tab);
     }
 
     public function redirect($keyword)
