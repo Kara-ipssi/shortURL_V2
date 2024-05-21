@@ -88,32 +88,32 @@
                 </section>
                 <section id="picto" class="grid grid-rows-2 grid-cols-3 max-sm:grid-cols-2 gap-[30px] max-w-full mt-[50px] mx-auto">
                     <div class="flex flex-col text-center">
-                        <img src="{{ asset('icons/good.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="https://cdn.discordapp.com/attachments/1242577399032582205/1242577530779598918/good.png?ex=664e5801&is=664d0681&hm=4d396f865ae345511794228054db77ecb9ff18ea2c44f0da5c95a57eaf98983f&" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Easy</h3>
                         <p class="text-[17px] mt-[10px]">Effortlessly shorten your links with ShortURL by entering your long URL to swiftly receive a concise and optimized link.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src="{{ asset('icons/link.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="https://cdn.discordapp.com/attachments/1242577399032582205/1242577530549043341/link.png?ex=664e5801&is=664d0681&hm=b6427edf4edc2a4d23bae164bc5f87b61796eb3f3217105359f069f4d434d21a&" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Shortened</h3>
                         <p class="text-[17px] mt-[10px]">ShortURL effortlessly shortens any link, regardless of its size.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src="{{ asset('icons/lock.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="https://cdn.discordapp.com/attachments/1242577399032582205/1242577530352046230/lock.png?ex=664e5801&is=664d0681&hm=1e71c9b6c07028debb9653d46d7ebd90fa9ec2b9a34c01084d89e758af417e88&" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Secure</h3>
                         <p class="text-[17px] mt-[10px]">Swift and secure, our service employs the HTTPS protocol and data encryption for enhanced protection.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src="{{ asset('icons/chart.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="https://cdn.discordapp.com/attachments/1242577399032582205/1242577531475984464/chart.png?ex=664e5801&is=664d0681&hm=3305d352232a03ebcfd4630b4fe4afedd6a314e88833d152aa5fe660947ff55f&" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Statistics</h3>
                         <p class="text-[17px] mt-[10px]">Monitor the click count for your shortened URL.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src="{{ asset('icons/remove.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="https://cdn.discordapp.com/attachments/1242577399032582205/1242577530121228419/remove.png?ex=664e5801&is=664d0681&hm=b530b52ef9a27b662c1586152e8085f629ccda9849297d31f2d41ef45e2a8a0e&" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Reliable</h3>
                         <p class="text-[17px] mt-[10px]">Any links attempting to spread spam, viruses, or malware will be promptly deleted.</p>
                     </div>
                     <div class="flex flex-col text-center">
-                        <img src="{{ asset('icons/device.png') }}" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
+                        <img src="https://cdn.discordapp.com/attachments/1242577399032582205/1242577531237044325/device.png?ex=664e5801&is=664d0681&hm=71f8f4ec4dd6f7b5e16b1786e483037cbfb9600deffe1ee7ff4ac4140091d439&" alt="Shorten" class="w-[100px] h-[100px] mx-auto">
                         <h3 class="font-bold text-[20px] mt-[10px]">Devices</h3>
                         <p class="text-[17px] mt-[10px]">Compatible across smartphones, tablets, and desktop devices.</p>
                     </div>
